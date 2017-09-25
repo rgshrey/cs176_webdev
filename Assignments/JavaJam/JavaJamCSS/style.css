@@ -1,6 +1,6 @@
 body {
-  background-color: #ffffcc;
-  color: #330000;
+  background-color: #f2eab7;
+  color: #000000;
   font-family: courier, monospace;
   font-size: 1em;
   text-align: center;
@@ -8,23 +8,24 @@ body {
 header {
   background-color: #ccaa66;
   width: 100%;
+  border-bottom: 3px black solid;
 }
 nav{
-  margin: 1%;
+  float: left;
+  width: 100px;
+  background-color: #ffffcc;
+  height: 600px;
 }
 #text {
   float:left;
-  margin-left: 20%;
 }
 #musicIntro{
-  margin-left: 20%;
-}
-.music{
-  margin-left: 20%;
+  margin-left: 150px;
 }
 .musicText{
   max-width: 40%;
   float:left;
+  margin-left: 50px;
 }
 .artistPhoto{
   max-width: 30%;
@@ -35,19 +36,27 @@ ul {
 }
 p{
   text-align: left;
+  margin-left: 50px;
 }
 #road {
   margin-right: 10%;
   float:left;
 }
 
-.navButton {
-    background-color: #ccaa66;
+nav a {
+    background-color: #ffffcc;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    width: 100px;
     color: rgb(3,3,25);
-    padding: 10px 15px;
     text-align: center;
     text-decoration: none;
     display: inline-block;
+}
+nav a:link { color: #996633; }
+nav a:visited {color: #ccaa66;}
+nav a:hover { background-color: #f2eab7;}
+
 }
 h1 {
   background-color: #ccaa66;
@@ -62,6 +71,7 @@ h2 {
   margin-left: 10%;
   margin-right: 10%;
   text-align: center;
+  border-bottom: 3px black solid;
 }
 
 footer {
