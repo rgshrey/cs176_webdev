@@ -1,0 +1,12 @@
+body{
+  background-color: lightblue;
+}
+h1{
+  padding: 4%;
+}
+form{
+  padding: 0 4% 2% 4%;
+}
+textarea{
+  width:70%;
+}

@@ -1,0 +1,39 @@
+body{
+  font-family: Georgia, serif;
+}
+header {
+  background-color: #ed9cc8;
+  padding: 0px 70px 40px 20px;
+}
+nav{
+background-color: #ed9cc8;
+}
+img {
+  float: right;
+  border: 4px black solid;
+  position: relative;
+  top: 0px;
+}
+h1 {
+  font-size: 3em;
+  padding:40px 0px 0px 10px;
+}
+ul {
+  text-align: left;
+  list-style-type: none;
+  font-size: 2em;
+}
+li{
+  display: inline-block;
+  padding: 10px 20px 10px 20px;
+}
+a {
+  text-decoration: none;
+}
+a:hover{
+  color: white;
+}
+p{
+  font-size: 1.5em;
+  padding: 40px 10px 10px 10px;
+}

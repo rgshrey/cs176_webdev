@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link href="lab8style.css" rel="stylesheet">
+</head>
+<body>
+  <h1>Music Survey</h1>
+  <form action="" method="post" id="music">
+    <p>Name: <input type="text" name="name" required></p><br>
+    <p>Email: <input type="text" name="email" required></p><br>
+    <h3>Select Your Favorite Types of Music</h3>
+    <p> Pop<input class="checkbox" type="checkbox" name="Pop" value="Pop">
+        Rock<input class="checkbox" type="checkbox" name="Rock" value="Rock">
+        Rap<input class="checkbox" type="checkbox" name="Rap" value="Rap">
+        Classical<input class="checkbox" type="checkbox" name="Classical" value="Classical">
+        Folk<input class="checkbox" type="checkbox" name="Folk" value="Folk">
+        Other<input class="checkbox" type="checkbox" name="Other" value="Other"></p>
+    <h3>Select How Often You Purchase Music CDs</h3>
+    <p><input type="radio" name="frequency" value="Weekly" checked> Weekly<br>
+       <input type="radio" name="frequency" value="Monthly"> Monthly<br>
+       <input type="radio" name="frequency" value="A few each year"> A few each year<br>
+       <input type="radio" name="frequency" value="Never"> Never</p>
+    <h3>Select the locations you listen to CDs</h3>
+      <select multiple name="location">
+        <option value="Car">Car</option>
+        <option value="Home">Home</option>
+        <option value="Work">Work</option>
+        <option value="Gym/Exercise">Gym/Exercise</option>
+      </select>
+    <h3>What role does music play in your life</h3>
+      <textarea name="role" rows="10" required>Enter text here</textarea><br>
+    <input type="submit" value="Submit">
+    <button type="reset" value="Reset">Reset</button>
+  </form>
+</body>
+</html>

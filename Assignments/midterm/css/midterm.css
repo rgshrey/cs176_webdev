@@ -1,0 +1,62 @@
+@font-face {
+  font-family: quicksand-regular;
+  src: url(fonts/Quicksand-Regular.otf);
+}
+#left{
+  width: 40%;
+  float: left;
+  padding: 5%;
+}
+#right{
+  width: 50%;
+  float: right;
+}
+body {
+  margin: 4%;
+  background-color: yellow;
+  color: black;
+  font-family: quicksand-regular, sans-serif;
+}
+h1 {
+  font-size: 2em;
+  border-left: red solid 3px;
+  width: 100%;
+  float: left;
+}
+h2{
+  font-size: .65em;
+  float: left;
+  width: 100%;
+  text-align: left;
+}
+h3 {
+  font-size: 3em;
+  width: 100%;
+}
+ul{
+  list-style: none;
+}
+li{
+  text-decoration: none;
+  display: inline-block;
+  padding: 5px 20px 5px 20px;
+}
+a {text-decoration: none;
+  color: black;
+}
+a:hover {color: red;}
+p{
+  font-size: 1em;
+  width: 100%;
+  float: left;
+}
+img{
+  width: 100%;
+}
+@media only screen and (max-width: 768px){
+  #left {width: 100%;}
+  #right {width: 20%; position: absolute; top: 0; right: 0;}
+  li {width: 100%; padding: 5px 5px 5px 0px;}
+  nav {width:70%}
+  ul {padding-left: 20px;}
+}

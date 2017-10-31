@@ -4,12 +4,17 @@ body {
   font-family: courier, monospace;
   font-size: 1em;
   text-align: center;
+  margin-bottom: 15%;
 }
 header {
   background-color: #ccaa66;
   width: 100%;
   border-bottom: 3px black solid;
 }
+header img{
+  margin: 1% 2% 1% 2%;
+}
+
 nav{
   float: left;
   width: 100px;
@@ -22,6 +27,7 @@ nav{
 #musicIntro{
   margin-left: 150px;
 }
+
 .musicText{
   max-width: 40%;
   float:left;
@@ -37,6 +43,18 @@ ul {
 p{
   text-align: left;
   margin-left: 50px;
+}
+#form{
+  text-align: left;
+  width: 50%;
+}
+label{
+  margin-top: 10px;
+}
+input, textarea{
+  float:right;
+  clear: right;
+
 }
 #road {
   margin-right: 10%;
@@ -63,6 +81,7 @@ h1 {
   margin-left: 10%;
   margin-right: 10%;
   text-align: center;
+  display: none;
 }
 h2 {
   background-color:#ccaa66;
@@ -74,10 +93,37 @@ h2 {
   border-bottom: 3px black solid;
 }
 
+#form {
+  margin-left: 20%;
+}
 footer {
   position:fixed;
   bottom:0;
   width:100%;
   background-color: #ccaa66;
   color: rgb(3,3,25);
+}
+@media only screen and (max-width: 768px){
+  h2{clear: both;}
+  nav{width: 100%; height: auto;}
+  nav a{width: 200px;}
+  header, header img, h2, p, #musicIntro, .musicText {width: 100%; height:auto; margin: 0%;}
+  header {
+    background-color: #ccaa66;
+    background-image: url('Images/javalogo.gif');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    width: 100%;
+    padding: 10% 0% 10% 0%;
+    border-bottom: 3px black solid;
+  }
+  h1 {
+    background-color: #ccaa66;
+    margin-left: 10%;
+    margin-right: 10%;
+    text-align: center;
+    display: none;
+  }
+  #road{margin-left: 0; width: 100%;}
 }
