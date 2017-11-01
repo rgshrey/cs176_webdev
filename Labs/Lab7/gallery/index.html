@@ -1,28 +1,62 @@
 <!DOCTYPE html>
 <html>
 <head>
+  <script>
+    function dam(){
+      document.getElementById('dam').style.display="block";
+    }
+    function arc(){
+      document.getElementById('arc').style.display="block";
+    }
+    function paris(){
+      document.getElementById('paris').style.display="block";
+    }
+    function castle(){
+      document.getElementById('castle').style.display="block";
+    }
+    function damout(){
+      document.getElementById('dam').style.display="none";
+    }
+    function arcout(){
+      document.getElementById('arc').style.display="none";
+    }
+    function parisout(){
+      document.getElementById('paris').style.display="none";
+    }
+    function castleout(){
+      document.getElementById('castle').style.display="none";
+    }
+  </script>
 <style>
 .gallery {
    margin: 5px;
    border: 1px solid #ccc;
    float: left;
-   width: 20%;
+}
+#large{
+  width: 720px;
+  float: right;
+}
+#small{
+  width: 40%;
+  float: left;
+}
+#arc, #dam, #castle, #paris{
+  width: 100%;
+  display: none;
 }
 
 .gallery:hover {
    border: 1px solid #777;
 }
-
 .gallery img {
-   width: 100%;
-   height: auto;
+   width: 200px;
+   height: 130px;
 }
-
 .desc {
    padding: 15px;
    text-align: center;
 }
-
 @media only screen and (max-width:760px){
   .gallery{
     width: 80%;}
@@ -31,32 +65,39 @@
 </head>
 <body>
 <h1>Travel Gallery</h1>
-<div class="gallery">
+<div id="large">
+  <img src="images/arc.jpg" id="arc">
+  <img src="images/amsterdam.JPG" alt="m in Amsterdam sign" id="dam">
+  <img src="images/castle.JPG" alt="A castle" id="castle">
+  <img src="images/paris.jpg" alt="Paris skyline" id="paris">
+</div>
+<div id="small">
+<div class="gallery" id="img1">
  <a href="images/amsterdam.JPG">
-   <img src="images/amsterdam.JPG" alt="m in Amsterdam sign">
+   <img src="images/amsterdam.JPG" alt="m in Amsterdam sign" onmouseover="dam()" onmouseout="damout()">
  </a>
  <div class="desc">Amsterdam</div>
 </div>
-
-<div class="gallery">
+<div class="gallery" id="img2">
  <a href="images/arc.jpg">
-   <img src="images/arc.jpg" alt="Arc de Triumph" >
+   <img src="images/arc.jpg" alt="Arc de Triumph" onmouseover="arc()" onmouseout="arcout()">
  </a>
  <div class="desc">Arc de Triumph</div>
 </div>
 
-<div class="gallery">
+<div class="gallery" id="img3">
  <a href="images/castle.JPG">
-   <img src="images/castle.JPG" alt="A castle">
+   <img src="images/castle.JPG" alt="A castle" onmouseover="castle()" onmouseout="castleout()">
  </a>
  <div class="desc">A castle in Antwerp</div>
 </div>
 
-<div class="gallery">
+<div class="gallery" id="img4">
  <a href="images/paris.jpg">
-   <img src="images/paris.jpg" alt="Paris skyline">
+   <img src="images/paris.jpg" alt="Paris skyline" onmouseover="paris()" onmouseout="parisout()">
  </a>
  <div class="desc">A view of Paris</div>
+</div>
 </div>
 
 </body>

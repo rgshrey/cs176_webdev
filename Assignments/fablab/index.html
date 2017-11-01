@@ -2,7 +2,6 @@
 <html>
 <head>
   <link href="fablab.css" rel="stylesheet">
-
 </head>
 <header>
   <h1>WHS Wayshak Fab Lab</h1>
@@ -16,9 +15,13 @@
 </header>
 <body>
   <div id="fullscreen-bg">
-  <video id="fullscreen-bgvideo" autoplay loop playbackRate=0.5>
+  <video id="fullscreen-bgvideo" autoplay loop>
     <source src="images/File_000.m4v" >
   </video>
   </div>
 </body>
+<script>
+  var vid = document.getElementById("fullscreen-bgvideo");
+  vid.playbackRate = 0.3;
+</script>
 </html>

@@ -12,7 +12,7 @@ header {
   position: absolute;
   top: 0;
   left: 0;
-  font-family: Helvetica, Arial, "sans-serif";
+  font-family: sans-serif;
   font-weight: 100;
   background: rgba(0,0,0,0.3);
   color: white;
@@ -40,6 +40,11 @@ a {
   }
 a:hover{
   color: gray;
+}
+form{
+  text-align: left;
+  width: 50%;
+  margin-left: 40%; 
 }
 
 @media screen and (min-width: 480px){
