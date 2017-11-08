@@ -1,3 +1,10 @@
+@font-face {
+  font-family: aaargh;
+  src: url(../aaargh.ttf);
+}
+html{
+  font-family: aaargh, sans-serif;
+}
 body{background-color: black;}
 #fullscreen-bg{background-color: black;}
 #fullscreen-bgvideo {
@@ -6,13 +13,13 @@ body{background-color: black;}
   left: 0;
   width: 100%;
   height: 100%;
+  font-family: aaargh, sans-serif;
   }
 
 header {
   position: absolute;
   top: 0;
   left: 0;
-  font-family: sans-serif;
   font-weight: 100;
   background: rgba(0,0,0,0.3);
   color: white;
@@ -21,6 +28,22 @@ header {
   width: 100%;
   font-size: 1.2em;
 }
+/*p{
+  background: rgba(0,0,0,0.3);
+  color: white;
+  text-align: center;
+  z-index: 1;
+  float: left;
+  width: 100%;
+}
+h3{
+  background: rgba(0,0,0,0.3);
+  color: white;
+  text-align: center;
+  z-index: 1;
+  float: left;
+  width: 50%;
+}*/
 ul{
   list-style: none;
 }
@@ -44,10 +67,11 @@ a:hover{
 form{
   text-align: left;
   width: 50%;
-  margin-left: 40%; 
+  margin-left: 40%;
 }
 
-@media screen and (min-width: 480px){
+
+@media screen and (max-width: 480px){
   ul{
     display: inline-block;
     list-style: none;

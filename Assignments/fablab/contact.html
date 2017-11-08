@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <link href="fablab.css" rel="stylesheet">
+  <link href="styles/fablab.css" rel="stylesheet">
   <style>
     body{background-image: url("images/IMG_1408.jpg");}
     h3{margin-top: 15%;text-align: center;padding: 2% 0 2% 0;}
@@ -14,15 +14,20 @@
       <li><a href="index.html">Home</a></li>
       <li><a href="contact.html">Contact</a></li>
       <li><a href="gallery.html">Gallery</a></li>
+      <li><a href="resources.html">Resources</a></li>
+      <li><a href="calendar.html">Calendar</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="classes.html">Classes</a></li>
     </ul>
   </nav>
 </header>
 <body>
-  <h3>Please use the form below to contact us!</h3>
+  <h3>Please use the form below to contact us:</h3>
   <form>
     <label for="name">Name: </label><p><input type="text" name="name" id="name"></p><br>
     <label for="email">Email: </label><p><input type="text" name="email" id="email"></p><br>
-    <label for="textarea">Question/Comment: </label><p><textarea name="textarea" id="textarea"></textarea>
+    <label for="textarea">Question/Comment: </label><p><textarea name="textarea" id="textarea" cols="50" rows="5"></textarea><br>
+    <button type="button" name="submit">Submit</button>
   </form>
 </body>
 </html>
