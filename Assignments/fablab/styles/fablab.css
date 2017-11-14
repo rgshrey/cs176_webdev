@@ -1,6 +1,6 @@
 @font-face {
   font-family: aaargh;
-  src: url(../aaargh.ttf);
+  src: url(../fonts/aaargh.ttf);
 }
 html{
   font-family: aaargh, sans-serif;
@@ -57,7 +57,6 @@ li{
 }
 
 nav ul li a {
-  font-family: sans-serif;
   font-weight:100;
   color: white;
   z-index: 1;
