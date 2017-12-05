@@ -2,28 +2,31 @@
 <html>
 <head>
   <link href="styles/fablab.css" rel="stylesheet">
+  <script src="js/nav.js"></script>
 </head>
 <header>
   <h1>WHS Wayshak Fab Lab</h1>
   <nav>
     <ul>
-      <li><a href="index.html">Home</a></li>
-      <li><a href="about.html">About</a></li>
-      <li><a href="gallery.html">Gallery</a></li>
-      <li><a href="resources.html">Resources</a></li>
-      <li><a href="classes.html">Classes</a></li>
-      <li><a href="calendar.html">Calendar</a></li>
-      <li><a href="contact.html">Contact</a></li>
+      <li><a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="expand()">&#9776;</a></li>
+      <li><a class="nav" href="index.html">Home</a></li>
+      <li><a class="nav" href="about.html">About</a></li>
+      <li><a class="nav" href="gallery.html">Gallery</a></li>
+      <li><a class="nav" href="resources.html">Resources</a></li>
+      <li><a class="nav" href="classes.html">Classes</a></li>
+      <li><a class="nav" href="calendar.html">Calendar</a></li>
+      <li><a class="nav" href="contact.html">Contact</a></li>
     </ul>
   </nav>
 </header>
 <body>
   <div id="fullscreen-bg">
+  <img id="fullscreen-img" src="images/IMG_1408.jpg">
   <video id="fullscreen-bgvideo" autoplay>
     <source src="images/fablabLaserEDIT.m4v">
   </video>
   </div>
-<h3>The Watertown School Makerspace. A place for art, design, engineering, and creativity.</h3>
+<h3 id="indexh3" class="hide">The Watertown School Makerspace. A place for art, design, engineering, and creativity.</h3>
 <p>Video: our laser cutter in action</p>
 </body>
 <script>

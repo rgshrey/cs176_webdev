@@ -2,30 +2,32 @@
 <html>
 <head>
   <link href="styles/fablab.css" rel="stylesheet">
+  <script src="js/nav.js"></script>
 </head>
 <header>
   <h1>WHS Wayshak Fab Lab</h1>
   <nav>
     <ul>
-      <li><a href="index.html">Home</a></li>
-      <li><a href="about.html">About</a></li>
-      <li><a href="gallery.html">Gallery</a></li>
-      <li><a href="resources.html">Resources</a></li>
-      <li><a href="classes.html">Classes</a></li>
-      <li><a href="calendar.html">Calendar</a></li>
-      <li><a href="contact.html">Contact</a></li>
+      <li><a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="expand()">&#9776;</a></li>
+      <li><a class="nav" href="index.html">Home</a></li>
+      <li><a class="nav" href="about.html">About</a></li>
+      <li><a class="nav" href="gallery.html">Gallery</a></li>
+      <li><a class="nav" href="resources.html">Resources</a></li>
+      <li><a class="nav" href="classes.html">Classes</a></li>
+      <li><a class="nav" href="calendar.html">Calendar</a></li>
+      <li><a class="nav" href="contact.html">Contact</a></li>
     </ul>
   </nav>
 </header>
 <body>
-  <div id="gridContainer">
+  <div id="gridContainer" class="hide">
     <div class="gridItem" id="grid1">
       <div class="shift"></div>
-      <a href="https://www.fablabs.io/labs/map"><img src="images/FabLabMap.png">Fab Labs Around the World</a>
+      <a href="https://www.fablabs.io/labs/map"><img src="images/map.png">Fab Labs Around the World</a>
     </div>
     <div class="gridItem" id="grid2">
       <div class="shift"></div>
-      <a href="https://www.fablabs.io/labs"><img src="images/wwfl.png">Fab Lab Profiles</a>
+      <a href="https://www.fablabs.io/labs"><img src="images/amsterdam2.png">Fab Lab Profiles</a>
     </div>
     <div class="gridItem" id="grid3">
       <div class="shift"></div>
@@ -33,7 +35,7 @@
     </div>
     <div class="gridItem" id="grid4">
       <div class="shift"></div>
-      <a href="http://makered.org/resources/"><img src="images/makeredresources.png">Maker Ed Resources</a>
+      <a href="http://makered.org/resources/"><img src="images/makered.png">Maker Ed Resources</a>
     </div>
     <div class="gridItem" id="grid5">
       <div class="shift"></div>

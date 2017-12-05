@@ -1,0 +1,77 @@
+<html>
+<head>
+  <style>
+    body{background-color: green;}
+    #answer{display: none;}
+  </style>
+  <script>
+    window.alert("This joke is NOT lame.")
+    function answer(){
+      document.getElementById('answer').style.display="block";
+    }
+    function color(){
+      var userColor = prompt("Type a color... nothing fancy please");
+      document.getElementById('body').style.backgroundColor = userColor;
+    }
+    function madlib(){
+      var a = prompt("Enter your name");
+      var b = prompt("Enter a verb");
+      var c = prompt("Enter an animal");
+      var d = prompt("Enter an adverb");
+      document.getElementById('madlib').innerHTML = "One day, " + a + " decided to " + b + " down the street in Boston." + a + " saw a " + c + " and shouted " + d + " at it until everyone on the street stared awkwardly. " + a + " then picked up the " + c + ", apologized, and gave it a kiss.  Everyone continued to stare. But they smiled a little. Then " + a + " went home.";
+    }
+    function IQtest(){
+      var userInput = prompt('Enter a number greater than 10.');
+      if (userInput > 10){alert('You passed! You are not an idiot!');}
+      else if (userInput <= 10){alert('sigh...');}
+      else{alert("FAILURE!!! That is not even a number.")}
+    }
+    function beer(){
+      var age = prompt("Enter your age");
+      if (age < 21){
+        window.open("nobeer.html","MsgWindow", "width=400 , height=400");}
+      else if(age >= 21){
+        window.open("http://massbrewersguild.org/");}
+      else{beer();}
+    }
+    function change(){
+      document.getElementById('change').style.display = "none";
+    }
+    function viewURL(form){
+      if(form.urlSelect.options[0].selected){location.href="index.html"};
+      if(form.urlSelect.options[1].selected){location.href="https://en.wikipedia.org/wiki/Dog"};
+      if(form.urlSelect.options[2].selected){location.href="https://en.wikipedia.org/wiki/Cat"};
+      if(form.urlSelect.options[3].selected){location.href="https://en.wikipedia.org/wiki/Pig"};
+      if(form.urlSelect.options[4].selected){location.href="https://en.wikipedia.org/wiki/Bear"};
+    }
+  </script>
+</head>
+<body id="body">
+  <h1>A neutron walks into a bar...</h1>
+  <button id="button" onclick="answer()">Answer</button>
+  <h1 id="answer">The bartender says, "For you, no charge."</h1>
+    <br><button onclick="color()">Change Color!</button>
+    <button onclick="madlib()">Mad Lib!</button>
+    <button id="IQtest" onclick="IQtest()">IQ Test</button>
+    <button onclick="beer()">Age 21+</button>
+  <h1 id="madlib"></h1>
+  <h1 onclick="change()" id="change">CLICK TO MAKE ME DISAPPEAR</h1>
+  <form name="form" class="form">
+    <select name="urlSelect" onChange="viewURL(form)">
+      <option selected="selected">Choose an animal</option>
+      <option>Dogs</option>
+      <option>Cats</option>
+      <option>Pigs</option>
+      <option>Bears</option>
+    </select>
+<br><a href="form.html">Form Test</a>
+
+
+<!--<script>
+  var a = 0;
+  setInterval(function(){
+    document.getElementById('IQtest').style.left = toString(a);
+    a++;},10);
+</script> -->
+</body>
+</html>

@@ -2,22 +2,24 @@
 <html>
 <head>
   <link href="styles/fablab.css" rel="stylesheet">
+  <script src="js/nav.js"></script>
 </head>
 <header>
   <h1>WHS Wayshak Fab Lab</h1>
   <nav>
     <ul>
-      <li><a href="index.html">Home</a></li>
-      <li><a href="about.html">About</a></li>
-      <li><a href="gallery.html">Gallery</a></li>
-      <li><a href="resources.html">Resources</a></li>
-      <li><a href="classes.html">Classes</a></li>
-      <li><a href="calendar.html">Calendar</a></li>
-      <li><a href="contact.html">Contact</a></li>
+      <li><a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="expand()">&#9776;</a></li>
+      <li><a class="nav" href="index.html">Home</a></li>
+      <li><a class="nav" href="about.html">About</a></li>
+      <li><a class="nav" href="gallery.html">Gallery</a></li>
+      <li><a class="nav" href="resources.html">Resources</a></li>
+      <li><a class="nav" href="classes.html">Classes</a></li>
+      <li><a class="nav" href="calendar.html">Calendar</a></li>
+      <li><a class="nav" href="contact.html">Contact</a></li>
     </ul>
   </nav>
 </header>
 <body>
-  <iframe id="calendar" src="https://calendar.google.com/calendar/embed?src=whsfablabcalendar%40gmail.com&ctz=America/New_York" style="border: 0" width="800" height="600" frameborder="0" scrolling="no"></iframe>
+  <iframe id="calendar" class="hide" src="https://calendar.google.com/calendar/embed?src=whsfablabcalendar%40gmail.com&ctz=America/New_York" style="border: 0" width="800" height="600" frameborder="0" scrolling="no"></iframe>
 </body>
 </html>

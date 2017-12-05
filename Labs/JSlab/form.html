@@ -1,0 +1,28 @@
+<html>
+<head>
+<script>
+function validateForm(){
+  if (document.forms[0].userName.value == ""){
+    alert("You must enter your name");
+  }
+  if (document.forms[0].userAge.value < 18){
+    alert("You are not old enough. Go away.");
+    return false;
+  }
+  if (document.forms[0].userAge.value >= 18){
+    alert("You may pass");
+    return true;
+  }
+}
+</script>
+</head>
+<body>
+  <form method="post" action="https://www.sec.state.ma.us/ovr/" onsubmit="return validateForm()">
+    <label for="userName">Name: </label>
+    <input type="text" name="userName" id="userName">
+    <label for="userAge">Age: </label>
+    <input type="text" name="userAge" id="userAge">
+    <input type="submit" value="Send information" id="submit">
+  </form>
+</body>
+</html>
