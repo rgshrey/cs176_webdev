@@ -6,6 +6,8 @@ html{
   font-family: aaargh, sans-serif;
 }
 body{background-color: black;}
+.insta {position: absolute; top: 55px; left: 5px;}
+.twitter{position: absolute; top: 95px; left: 10px;}
 #fullscreen-bg{
   background-color: black;
   width: auto;
@@ -58,7 +60,7 @@ li{
 }
 
 #calendar{
-  margin-top: 20%;
+  margin-top: 18%;
   margin-left: 20%;
 }
 
@@ -80,7 +82,7 @@ form{
   margin-left: 40%;
 }
 #gridContainer {
-  margin-top: 20%;
+  margin-top: 18%;
   width: 100%;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
@@ -132,7 +134,7 @@ form{
 }
 #abouth3{
   position: absolute;
-  top: 30%;
+  top: 35%;
   left:10%;
   right: 10%;
   font-weight: 100;
@@ -150,6 +152,9 @@ form{
     position:absolute;
     right: 0;
   }
+  h1{font-size: 1.1em;}
+  .insta {position: absolute; top: 110px; left: 50px;}
+  .twitter{position: absolute; top: 115px; left: 10px;}
   #indexh3{
     float:left;
     clear: both;
